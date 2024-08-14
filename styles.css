@@ -151,9 +151,20 @@ ul {
   object-fit: cover;
 }
 
-@media screen and (min-width: 400px) {
+.grid-container {
+  grid-template-columns: repeat(3, auto); /* Adjust for 3 per columns */
+  grid-template-rows: repeat(3, auto);
+}
+
+@media (max-width: 900px) {
   .grid-container {
-    grid-template-columns: repeat(3, auto); /* Adjust for 3 columns */
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, auto); /* Adjust for 2 per columns */
+    grid-template-rows: repeat(2, auto);
+  }
+}
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(1, auto); /* Adjust for 1 per columns */
+    grid-template-rows: repeat(1, auto);
   }
 }
