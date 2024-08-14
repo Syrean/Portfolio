@@ -7,6 +7,7 @@
   border-collapse: collapse;
   color: aliceblue;
   scroll-behavior: smooth;
+  cursor: context-menu;
 }
 
 body {
@@ -19,7 +20,7 @@ ul {
 
 /*------------------------------- nav bar ---------------------------------*/
 
-.syrean {
+#syrean {
   font-family: "Edu VIC WA NT Beginner";
 }
 
@@ -35,6 +36,8 @@ ul {
   font-size: x-large;
   text-decoration: none;
   padding: 20px;
+  transition: color 0.13s ease-in-out, background 0.13s ease-in-out,
+    opacity 0.13s ease-in-out, box-shadow 0.13s ease-in-out;
 }
 
 .picking:hover {
@@ -50,6 +53,10 @@ ul {
   background-image: url(assets/bg-top.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.top-page p {
+  font-size: 25px;
 }
 
 .links {
@@ -71,9 +78,24 @@ ul {
 .name {
   padding: 5%;
 }
+
 .name p {
   padding-top: 2%;
 }
+
+.name h1 {
+  font-size: 40px;
+}
+
+.boni {
+  transition: color 0.13s ease-in-out, background 0.13s ease-in-out,
+    opacity 0.13s ease-in-out, box-shadow 0.13s ease-in-out;
+}
+
+.boni:hover {
+  color: #4a97f0;
+}
+
 .bt-cv {
   align-items: center;
   appearance: button;
@@ -87,7 +109,6 @@ ul {
   display: flex;
   flex-direction: row;
   flex-shrink: 0;
-  font-family: "RM Neue", sans-serif;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
@@ -100,6 +121,7 @@ ul {
   -webkit-user-select: none;
   touch-action: manipulation;
 }
+
 .bt-cv:active {
   background-color: #006ae8;
 }
@@ -107,6 +129,7 @@ ul {
 .bt-cv:hover {
   background-color: #1c84ff;
 }
+
 .bt-cv:hover {
   box-shadow: rgba(0, 1, 0, 0.2) 0 2px 8px;
   opacity: 0.85;
@@ -127,6 +150,11 @@ ul {
   font-size: 50px;
   text-align: center;
   padding-top: 2%;
+  transition: color 0.13s ease-in-out, background 0.13s ease-in-out,
+    opacity 0.13s ease-in-out, box-shadow 0.13s ease-in-out;
+}
+#experience:hover {
+  color: #4a97f0;
 }
 
 .experience {
@@ -170,7 +198,15 @@ ul {
 }
 
 .experience h3 {
-  font-size: 32px;
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 5%;
+  transition: color 0.13s ease-in-out, background 0.13s ease-in-out,
+    opacity 0.13s ease-in-out, box-shadow 0.13s ease-in-out;
+}
+
+.experience h3:hover {
+  color: #4a97f0;
 }
 
 /*------------------------------- skills --------------------------------*/
@@ -179,6 +215,30 @@ ul {
   font-family: "Edu VIC WA NT Beginner";
   font-size: 50px;
   text-align: center;
+  transition: color 0.13s ease-in-out, background 0.13s ease-in-out,
+    opacity 0.13s ease-in-out, box-shadow 0.13s ease-in-out;
+}
+
+#skills:hover {
+  color: #4a97f0;
+}
+
+.skills {
+  padding: 5%;
+}
+
+.skills p {
+  text-align: justify;
+  padding: 5%;
+}
+
+.skills h3 {
+  font-size: 23px;
+  font-family: "Edu VIC WA NT Beginner";
+  font-size: 35px;
+}
+.social {
+  padding-top: 5%;
 }
 
 .grid-container {
@@ -219,16 +279,77 @@ ul {
   font-family: "Edu VIC WA NT Beginner";
   font-size: 50px;
   text-align: center;
+  transition: color 0.13s ease-in-out, background 0.13s ease-in-out,
+    opacity 0.13s ease-in-out, box-shadow 0.13s ease-in-out;
+}
+
+#about:hover {
+  color: #4a97f0;
+}
+
+.desc {
+  padding: 3%;
+  text-align: justify;
 }
 
 /*------------------------------- contact --------------------------------*/
 
+hr {
+  border: none;
+  height: 1px;
+  background-image: linear-gradient(to right, #0c0c0c, #8f8f8f, #0c0c0c);
+}
+hr:after {
+  content: "§";
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(60deg);
+  transform-origin: 50% 50%;
+  padding: 1rem;
+  background-color: #0c0c0c;
+}
 #contact {
+  padding-top: 5%;
   font-family: "Edu VIC WA NT Beginner";
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
+  transition: color 0.13s ease-in-out, background 0.13s ease-in-out,
+    opacity 0.13s ease-in-out, box-shadow 0.13s ease-in-out;
 }
 
+#contact:hover {
+  color: #4a97f0;
+}
+
+.contacts {
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3%;
+}
+
+.contacts p {
+  font-size: 2rem;
+  margin-bottom: 2%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #101720;
+  color: #ffffff;
+  padding: 2%;
+  font-family: "Edu VIC WA NT Beginner";
+}
+
+.button-up {
+  display: flex;
+  justify-content: right;
+  padding: 1%;
+}
 /*------------------------------- media query --------------------------------*/
 
 @media (max-width: 900px) {
