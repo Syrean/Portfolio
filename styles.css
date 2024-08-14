@@ -395,6 +395,19 @@ footer {
     border-radius: 50%;
     max-width: fit-content;
   }
+
+  .name p {
+    font-size: 16px;
+  }
+
+  .experience p,
+  .photo p,
+  .social p,
+  .desc1 p,
+  .desc2 p {
+    font-size: 16px;
+    padding: 5%;
+  }
 }
 
 @media (max-width: 900px) {
