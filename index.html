@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -110,8 +112,9 @@
   <hr>
 
     <h2 id="about">About Me</h2>
-    <div>
-            <div class="desc">
+
+    <div class="about">
+            <div class="desc1">
                 <p>
         Hello! My name is Angelo Syrean Blanchard Bonifacio, and I'm passionate about
         becoming a skilled front-end developer. I believe that growth comes
@@ -125,7 +128,7 @@
                 </p>
             </div>
 
-            <div class="desc">
+            <div class="desc2">
                 <p>
         I am currently a 3rd-year student at Gordon College - College of
         Computer Studies, pursuing a Bachelor of Science in Information
@@ -150,14 +153,14 @@
     <h2 id="contact">Contact Information</h2>
 
     <div class="contacts">
-                <p>Feel free to contact me at</p>
+                <p class="contacts">Feel free to contact me at</p>
             <div>
                 <ul>
-        <li><i class="bx bxl-gmail"> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=angelo.s.bonifacio@gmail.com" target="_blank">angelo.s.bonifacio@gmail.com</a></i></li>
-        <li><i class="bx bxl-facebook"> <a href="https://www.facebook.com/angelosyrean" target="_blank">Angelo Bonifacio</a></i></li>
-        <li><i class="bx bxs-phone"> <a href="tel:+639171232903" target="_blank">(+63)917 123 2903</a></i></li>
-        <li><i class="bx bxl-twitch"></i> <a href="https://www.twitch.tv/syrean_" target="_blank">syrean_</a></i></li>
-        <li><i class='bx bxl-discord-alt'></i> <a href="https://discord.com/users/711247045343707138" target="_blank">syrean_</a></li>
+        <li class="list"><i class="bx bxl-gmail"> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=angelo.s.bonifacio@gmail.com" target="_blank">angelo.s.bonifacio@gmail.com</a></i></li>
+        <li class="list"><i class="bx bxl-facebook"> <a href="https://www.facebook.com/angelosyrean" target="_blank">Angelo Bonifacio</a></i></li>
+        <li class="list"><i class="bx bxs-phone"> <a href="tel:+639171232903" target="_blank">(+63)917 123 2903</a></i></li>
+        <li class="list"><i class="bx bxl-twitch"></i> <a href="https://www.twitch.tv/syrean_" target="_blank">syrean_</a></i></li>
+        <li class="list"><i class='bx bxl-discord-alt'></i> <a href="https://discord.com/users/711247045343707138" target="_blank">syrean_</a></li>
                 </ul>
             </div>
     </div>
@@ -170,4 +173,18 @@
       </div>
     </footer>
   </body>
+  <script>
+
+ScrollReveal ({
+    distance: '100px',
+  });
+
+ScrollReveal().reveal('.nav-bar', { delay: 100, origin: 'top' });
+ScrollReveal().reveal('#experience, #skills, #about, #contact', { delay: 300, origin: 'left' });
+ScrollReveal().reveal('.profile, .contacts',  { delay: 300, origin: 'left' });
+ScrollReveal().reveal('.name, .skills, .social', { delay: 300, origin: 'right' });
+ScrollReveal().reveal('.experience, .about', { delay: 300});
+ScrollReveal().reveal('.list', { interval: 200});
+
+  </script>
 </html>
