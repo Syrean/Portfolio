@@ -44,7 +44,6 @@ ul {
   display: flex;
   align-items: center;
   background-image: url(assets/bg-top.png);
-  size: 150px;
 }
 
 .links {
