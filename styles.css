@@ -1,13 +1,15 @@
-.body {
+body {
+  font-family: "Onest", sans-serif;
   background-color: aliceblue;
 }
 ul {
   list-style-type: none;
 }
 
-.header {
+.nav-bar {
   display: flex;
   justify-content: space-around;
+  color: #435be0;
 }
 .picking {
   font-size: x-large;
@@ -19,7 +21,9 @@ ul {
 }
 
 .profile {
-  border-radius: 500px;
+  width: 100px;
+  height: 100px;
+  border-radius: 70px;
   max-width: fit-content;
 }
 
