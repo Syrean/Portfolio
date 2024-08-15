@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="https://unpkg.com/scrollreveal"></script>
-
+    
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,13 +9,16 @@
     <link rel="stylesheet" href="styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    
     <title>Bonifacio's Portfolio</title>
     <link rel="icon" type="image/x-icon" href="assets/logo.png">
-
+    
   </head>
   <!--------------------------------------------------------------- header ----------------------------------------------->
   <body>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- <script src="script.js"></script> -->
 
     <div id="navbar">
       <h1 id="syrean">Syrean's Portfolio</h1>
@@ -32,7 +34,7 @@
 
 
     <div class="top-page">
-        <div class="profile">
+        <div class="profile"> 
             <img src="assets/profile.png" alt="profile" class="profile">
         </div>
 
@@ -172,37 +174,45 @@
   </body>
   <script>
 
-ScrollReveal ({
-    distance: '100px',
-  });
+ScrollReveal({
+  distance: "100px",
+});
 
-ScrollReveal().reveal('.nav-bar', { delay: 100, origin: 'top' });
-ScrollReveal().reveal('#experience, #skills, #about, #contact', { delay: 300, origin: 'left' });
-ScrollReveal().reveal('.profile, .contacts',  { delay: 300, origin: 'left' });
-ScrollReveal().reveal('.name, .skills, .social', { delay: 300, origin: 'right' });
-ScrollReveal().reveal('.experience, .about', { delay: 300});
-ScrollReveal().reveal('.list', { interval: 200});
+ScrollReveal().reveal(".nav-bar", { delay: 100, origin: "top" });
+ScrollReveal().reveal("#experience, #skills, #about, #contact", {
+  delay: 300,
+  origin: "left",
+});
+ScrollReveal().reveal(".profile, .contacts", { delay: 300, origin: "left" });
+ScrollReveal().reveal(".name, .skills, .social", {
+  delay: 300,
+  origin: "right",
+});
+ScrollReveal().reveal(".experience, .about", { delay: 300 });
+ScrollReveal().reveal(".list", { interval: 200 });
 
-  var prevScrollpos = window.pageYOffset;
+var prevScrollpos = window.pageYOffset;
 
-  var prevScrollpos = window.pageYOffset;
+var prevScrollpos = window.pageYOffset;
 
-  window.addEventListener("scroll", function() {
-    var currentScrollPos = window.pageYOffset;
-    console.log("Previous: " + prevScrollpos + ", Current: " + currentScrollPos); // Debugging
-    if (prevScrollpos > currentScrollPos) {
-      document.getElementById("navbar").style.top = "0";
-    } else {
-      document.getElementById("navbar").style.top = "-125px";
-    }
-    prevScrollpos = currentScrollPos;
-  });
+window.addEventListener("scroll", function () {
+  var currentScrollPos = window.pageYOffset;
+  console.log("Previous: " + prevScrollpos + ", Current: " + currentScrollPos); // Debugging
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-125px";
+  }
+  prevScrollpos = currentScrollPos;
+});
 
 // Get the button
 let mybutton = document.getElementById("bt-up");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () {
+  scrollFunction();
+};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
