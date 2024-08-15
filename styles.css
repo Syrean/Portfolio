@@ -427,6 +427,11 @@ footer {
     font-size: 16px;
     padding: 5%;
   }
+
+  footer {
+    font-size: 10px;
+    padding: 5%;
+  }
 }
 
 @media (max-width: 900px) {
