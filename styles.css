@@ -30,8 +30,9 @@ ul {
 #navbar {
   position: fixed;
   top: 0;
+  padding-top: 2%;
+  padding-bottom: 2%;
   width: 100%;
-  padding: 20px;
   display: flex;
   z-index: 1000;
   justify-content: space-around;
@@ -437,15 +438,30 @@ footer {
 
 @media (max-width: 850px) {
   #navbar {
+    display: flex;
     justify-content: center;
   }
 
   #syrean {
+    display: flex;
     text-align: center;
   }
 
   .picking {
     display: none;
+  }
+
+  #bt-up {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    border: none;
+    outline: none;
+    background-color: #101720;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 30%;
   }
 }
 
